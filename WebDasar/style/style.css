@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Roboto:ital,wght@1,900&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header { 
+    display: inline;
+}
+
+.jumbotron {
+    font-size: 14px;
+    padding: 2px;
+    background-color: #FFFADD;
+    text-align: center;
+    color: #26577C;
+}
+
+nav {
+    background-color: #F1C376;
+    max-width: 100%;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav figure img {
+    width: 140px;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 2px 0;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid rgba(200, 183, 0, 0)
+}
+
+nav ul li a:hover {
+    color: #26577C;
+    border-bottom: 1px solid #26577C;
+}
+
+.menu-icon {
+    font-size: 40px;
+    display: none;
+    color: #ffffff;
+}
+
+.leptop img {
+    width: 100%;
+    max-width: 800px;
+    align-items: center;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+main {
+    padding: 10px;
+    font-weight: 400;
+    text-decoration: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 20px;
+}
+
+footer {
+    padding: 5px;
+    color: white;
+    background-color: #F1C376;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2, h3 {
+    color: #F1C376;
+}
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.featured-image {
+    width: 90%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+main aside {
+    width: 100%;
+    float: left;
+    margin-top: 40px;
+}
+
+aside .leptop1 img , .leptop2 img, .leptop3 img, .leptop4 img {
+    float: left;
+    width: 70px;
+    margin: 10px;
+    
+    
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+    
+    aside .leptop1 img , .leptop2 img, .leptop3 img, .leptop4 img {
+        float: left;
+        margin: 0px;
+        
+    }
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    nav {
+    flex-wrap: wrap;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    text-decoration: none;
+    }
+
+    nav ul {
+    flex-direction: column;
+    width: 100%;
+    }
+
+    nav ul li:last-of-type {
+    padding-bottom: 8px;
+    }
+
+    nav ul.hidden {
+    display: none;
+    }
+
+    .menu-icon {
+    display: flex;
+    align-items: center;
+    }
+
+    .leptop img {
+        margin-top: 10px;
+    }
+
+    nav figure img {
+        float: right;
+        width: 140px;
+        align-items: center ;
+    }
+
+    footer {
+        padding: 5px;
+    }
+
+    section {
+        padding: auto;
+        margin-right: 20px;
+        vertical-align: middle;
+    }
+}
